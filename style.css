@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=IBM+Plex+Serif:wght@500&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  cursor: pointer;
+  top: 0px;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list {
+  width: 50%;
+  /* background-color: antiquewhite; */
+  display: flex;
+
+  align-items: center;
+}
+.nav-list li {
+  list-style: none;
+  padding: 26px 25px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+  border-radius: 4px;
+}
+.nav-list li a:hover {
+
+  background-color: gray;
+}
+.rightnav {
+  /* background-color: aquamarine; */
+  width: 50%;
+  text-align: right;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.background {
+  /* method to put background img in navbar */
+  background: rgba(0, 0, 0, 0.7) url(back.jpg) center center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin: auto;
+  height: 80%;
+}
+.firstsection {
+  height: 100vh;
+}
+.first-half {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second-half {
+  width: 30%;
+}
+.pic {
+  height: 140px;
+  width: 140px;
+
+  border-radius: 100px;
+  display: block;
+  margin: auto;
+}
+.text-big {
+  font-size: 35px;
+}
+.text-small {
+  font-size: 18px;
+}
+.btn {
+  padding: 8px 20px;
+  margin: 10px 3px;
+  border: 2px solid white;
+  border-radius: 7px;
+  /* used to make btn transperent    */
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: gray;
+}
+.btn-dark {
+  color: black;
+  border: 2px solid grey;
+}
+.second-half {
+  width: 30%;
+}
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+}
+.section-left {
+  flex-direction: row-reverse;
+}
+.thumbnail img {
+  border: 3px solid rgb(160, 166, 148);
+  border-radius: 25px;
+  width: 230px;
+  height: 270px;
+  margin-top: 60px;
+}
+.sectiontag {
+  padding: 15px 0px;
+}
+.sectionsubtag {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.paras {
+  padding: 0 65px;
+}
+.contact {
+  background-color: #f6f5f4;
+  height: 835px;
+  margin-top: 25px;
+}
+.text-center {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 35px;
+  font-family: "Ubuntu", sans-serif;
+}
+.form {
+  max-width: 62%;
+  margin: 25px auto;
+}
+.form-input {
+  width: 100%;
+  font-size: 19px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin: 15px 0;
+  padding: 5px 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer {
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #f6f5f4;
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+.line {
+  width: 30px;
+  background-color: white;
+  height: 4px;
+  margin: 6px 6px;
+}
+@media only screen and (max-width: 1150px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .navbar {
+    height: 447px;
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+  }
+  .rightnav {
+    justify-content: center;
+  }
+  #search {
+    width: 100%;
+  }
+  .burger{
+    display: block;
+  }
+  .h-nav-resp{
+    height: 70px;
+  }
+  .v-class-resp{
+    opacity: 0;
+  }
+  .box-main{
+      flex-direction: column-reverse;
+      max-width: 100%;
+  }
+  .section{
+    flex-direction: column-reverse;
+  }
+  .text-big{
+    text-align: center;
+  }
+  .text-small{
+    text-align: center;
+  }
+  .buttons{
+    text-align: center;
+  }
+  .paras{
+    padding: 0px;
+  }
+}
